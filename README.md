@@ -1,1 +1,1 @@
-# gsgeopandas
+# gsxarray

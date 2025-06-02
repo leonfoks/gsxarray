@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gsxarray"
+version = "1.0.0"
+description = "Geospatial statistics with xarray"
+readme = { file = "README.rst", content-type = "text/markdown" }
+requires-python = ">=3.12"
+authors = [
+    { name = "Leon Foks", email = "leonfoks@gmail.com" },]
+dynamic = ["dependencies"]
+classifiers = [
+    'License :: OSI Approved',
+    'License :: MIT',
+    'Programming Language :: Python :: 3',
+    'Topic :: Scientific/Engineering'
+]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[project.optional-dependencies]
+docs = ["sphinx_gallery", "sphinx_rtd_theme"]
+
+[tool.setuptools.packages.find]
+where = ["."]

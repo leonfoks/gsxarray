@@ -1,0 +1,6 @@
+xarray
+rasterio
+numpy
+geopandas
+shapely
+numba
